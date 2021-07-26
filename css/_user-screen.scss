@@ -1,0 +1,103 @@
+body > .page > #page-main > .page-user-screen{
+    @include size(60%, auto);
+    min-width: 280px;
+    margin:auto;
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
+    
+
+    & > header{
+        @include size(100%, auto);
+        @include flex(row, center, center, nowrap);
+        @include position(relative, top, auto, left,auto);
+        background-color:darken(#20379B, 10%);
+
+        & > p{@include size(65%, auto);
+            @include flex(row, center, center, nowrap);
+            @include font(
+            'Jura', sans-serif,
+            clamp(1rem, calc(1rem + 1vw), 1.5rem),
+            initial, 
+            initial,
+            900, 
+            #DEDEDE,
+            initial,
+            initial
+            );
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+        }
+
+        & > i{
+            @include size(10%, auto);
+            @include flex(row, center, center, nowrap);
+            padding: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+            font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+            @include position(absolute, top, auto, right, 0);
+            color: #DEDEDE;
+            border: 0.1rem solid #DEDEDE;
+            border-radius: 5px;
+            margin-right:5%;
+            cursor: pointer;
+        }
+    }
+
+    & > article{
+        @include size(100%, auto);
+        background-color:lighten(#20379B, 5%);
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+
+        & > fieldset{
+            @include size(90%, auto);
+            @include font(
+            'Jura', sans-serif,
+            clamp(1rem, calc(1rem + 1vw), 2rem),
+            initial, 
+            initial,
+            900, 
+            #DEDEDE,
+            initial,
+            initial
+            );
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+            margin: auto;
+            @include flex(row, flex-start, flex-start, wrap);
+            
+
+            /* & > legend{
+                
+            } */
+
+            & > label{
+                @include size(100%, auto);
+                
+            }
+
+            & > p{
+                @include size(100%, auto);
+                padding: clamp(0.2rem, calc(0.2rem + 1vw), 1rem);
+                background-color: #DEDEDE;
+                color: #393939
+                
+            }
+
+            & > section{
+                @include size(100%, auto);
+                
+
+                & > label{
+                    @include size(100%, auto);
+                }
+
+                & > p{
+                    @include size(100%, auto);
+                    padding: clamp(0.2rem, calc(0.2rem + 1vw), 1rem);
+                    background-color: #DEDEDE;
+                    color: #393939
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1860 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Tourney:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+body > .page {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+}
+
+body > .page > header {
+  width: 100%;
+  height: clamp(4rem, calc(4rem + 1vw), 8rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > main {
+  height: auto;
+}
+
+body > .page > footer {
+  width: 100%;
+  height: clamp(4rem, calc(4rem + 1vw), 8rem);
+}
+
+body > .page > header {
+  background-color: #20379b;
+}
+
+body > .page > main {
+  background-color: rgba(222, 222, 222, 0.9);
+}
+
+body > .page > footer {
+  background-color: rgba(57, 57, 57, 0.9);
+}
+
+.card-description-open {
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
+  height: auto !important;
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+}
+
+.on-top {
+  z-index: 99 !important;
+}
+
+.placeholderFillEffect {
+  -webkit-transform: translateY(-80%) translateX(-30%) !important;
+          transform: translateY(-80%) translateX(-30%) !important;
+  font-size: clamp(0.3rem, calc(0.3rem + 1vw), 0.6rem) !important;
+}
+
+.flexColumn {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+body > .page > #page-header > p {
+  width: 40%;
+  height: 100%;
+  font-family: "Tourney", cursive;
+  font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: clamp(1rem, calc(1rem + 1vw), 2rem);
+  letter-spacing: clamp(0.2rem, calc(0.2rem + 1vw), 0.5rem);
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+@media (max-width: 360px) {
+  body > .page > #page-header > p {
+    font-size: clamp(0.4rem, calc(0.4rem + 1vw), 1rem);
+  }
+}
+
+body > .page > #page-header > nav {
+  width: 50%;
+  height: 100%;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-header > nav {
+    padding: 0;
+  }
+}
+
+body > .page > #page-header > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-header > nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+body > .page > #page-header > nav > ul > li {
+  width: 40%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Tourney", cursive;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: clamp(1rem, calc(1rem + 1vw), 2rem);
+  letter-spacing: clamp(0.2rem, calc(0.2rem + 1vw), 0.5rem);
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  cursor: pointer;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  margin: 0.1rem;
+}
+
+body > .page > #page-header > nav > ul > li:hover {
+  background-color: #DEDEDE;
+  color: #393939;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-header > nav > ul > li {
+    width: 60%;
+    height: auto;
+    padding: 0;
+    font-size: clamp(0.3rem, calc(0.3rem + 1vw), 0.7rem);
+  }
+}
+
+body > .page > #page-header > nav > ul > #logged-users-bt, body > .page > #page-header > nav > ul > #market-kart-bt, body > .page > #page-header > nav > ul > #logged-users-edit-bt, body > .page > #page-header > nav > ul > #store-page-bt {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Tourney", cursive;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: clamp(1rem, calc(1rem + 1vw), 2rem);
+  letter-spacing: clamp(0.2rem, calc(0.2rem + 1vw), 0.5rem);
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  cursor: pointer;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+
+body > .page > #page-header > nav > ul > #logged-users-bt:hover, body > .page > #page-header > nav > ul > #market-kart-bt:hover, body > .page > #page-header > nav > ul > #logged-users-edit-bt:hover, body > .page > #page-header > nav > ul > #store-page-bt:hover {
+  background-color: #DEDEDE;
+  color: #393939;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-header > nav > ul > #logged-users-bt, body > .page > #page-header > nav > ul > #market-kart-bt, body > .page > #page-header > nav > ul > #logged-users-edit-bt, body > .page > #page-header > nav > ul > #store-page-bt {
+    width: 60%;
+    height: 90%;
+    padding: 0;
+    font-size: clamp(0.3rem, calc(0.3rem + 1vw), 0.7rem);
+  }
+}
+
+body > .page > #page-header > nav > ul > #logged-users-bt > i, body > .page > #page-header > nav > ul > #market-kart-bt > i, body > .page > #page-header > nav > ul > #logged-users-edit-bt > i, body > .page > #page-header > nav > ul > #store-page-bt > i {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  padding: 0.5rem 0 0.5rem 0;
+  z-index: 0;
+}
+
+body > .page > #page-header > nav > ul > #market-kart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-inicial {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-main > .page-inicial {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product-card {
+  width: 20%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  min-width: 240px;
+  max-width: 240px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.product-card-name {
+  width: 100%;
+  height: 10rem;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  background-color: #20379B;
+  z-index: 2;
+}
+
+.product-card-photo {
+  width: 100%;
+  height: 10rem;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: center;
+     object-position: center;
+  background-color: #20379B;
+  z-index: 2;
+}
+
+.product-card-description-title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.3rem, calc(0.3rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  background-color: #34248f;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.product-card-description {
+  width: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  height: 0vh;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.3rem, calc(0.3rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: 1.7rem;
+  letter-spacing: initial;
+  background-color: rgba(32, 55, 155, 0.8);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.product-card-description > p {
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+.product-card-price {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.3rem, calc(0.3rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  background-color: #20379B;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  position: relative;
+}
+
+.product-card-price > .price-title {
+  width: 100%;
+  height: auto;
+}
+
+.product-card-price > .price-currency {
+  color: #DEDEDE;
+  font-size: 2rem;
+}
+
+.product-card-button {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: auto;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1.5rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #393939;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  background-color: #ffe606;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.product-card-button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+    height: auto;
+    min-width: 90%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+body > .page > #page-main > .page-signin {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(222, 222, 222, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  body > .page > #page-main > .page-signin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+body > .page > #page-main > .page-signin > .signin-form {
+  width: 20%;
+  height: 50%;
+  min-width: 280px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #20379B;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  body > .page > #page-main > .page-signin > .signin-form {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+body > .page > #page-main > .page-signin > .signin-form > header {
+  width: 60%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1.5rem, calc(1.5rem + 1vw), 3rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main > .input-text, body > .page > #page-main > .page-signin > .signin-form > main > .input-password {
+  width: 60%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  top: auto;
+  left: auto;
+  border-bottom: 0.1rem solid #DEDEDE;
+  padding: 0.5rem;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main > .input-text > i, body > .page > #page-main > .page-signin > .signin-form > main > .input-password > i {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #DEDEDE;
+  padding: clamp(0.1rem, calc(0.1rem + 1vw), 0.6rem);
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main > .input-text > .show-pass, body > .page > #page-main > .page-signin > .signin-form > main > .input-password > .show-pass {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  top: auto;
+  right: 0;
+  padding: clamp(0.1rem, calc(0.1rem + 1vw), 0.6rem);
+  cursor: POINTER;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main > .input-text > .input-container, body > .page > #page-main > .page-signin > .signin-form > main > .input-password > .input-container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main > .input-text > .input-container > span, body > .page > #page-main > .page-signin > .signin-form > main > .input-password > .input-container > span {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  bottom: auto;
+  left: auto;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding-left: 1rem;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > main > .input-text > .input-container > input, body > .page > #page-main > .page-signin > .signin-form > main > .input-password > .input-container > input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding-left: 1rem;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > footer {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > footer > input {
+  width: 100%;
+  height: 30%;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #393939;
+  line-height: initial;
+  letter-spacing: initial;
+  margin-bottom: clamp(0.4rem, calc(0.4rem + 1vw), 0.8rem);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+body > .page > #page-main > .page-signin > .signin-form > footer > input:hover {
+  background-color: #243fb0;
+  color: #DEDEDE;
+}
+
+body > .page > #page-main > .page-signup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(222, 222, 222, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  body > .page > #page-main > .page-signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+body > .page > #page-main > .page-signup > .signup-form {
+  width: 20%;
+  height: 50%;
+  min-width: 280px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #20379B;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  body > .page > #page-main > .page-signup > .signup-form {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+body > .page > #page-main > .page-signup > .signup-form > header {
+  width: 80%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main > .input-text, body > .page > #page-main > .page-signup > .signup-form > main > .input-password, body > .page > #page-main > .page-signup > .signup-form > main > .input-email {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  top: auto;
+  left: auto;
+  border-bottom: 0.1rem solid #DEDEDE;
+  padding: 0.5rem;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main > .input-text > i, body > .page > #page-main > .page-signup > .signup-form > main > .input-password > i, body > .page > #page-main > .page-signup > .signup-form > main > .input-email > i {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #DEDEDE;
+  padding: clamp(0.1rem, calc(0.1rem + 1vw), 0.6rem);
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main > .input-text > .show-pass, body > .page > #page-main > .page-signup > .signup-form > main > .input-password > .show-pass, body > .page > #page-main > .page-signup > .signup-form > main > .input-email > .show-pass {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  top: auto;
+  right: 0;
+  z-index: 99;
+  padding: clamp(0.1rem, calc(0.1rem + 1vw), 0.6rem);
+  cursor: POINTER;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main > .input-text > .input-container, body > .page > #page-main > .page-signup > .signup-form > main > .input-password > .input-container, body > .page > #page-main > .page-signup > .signup-form > main > .input-email > .input-container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main > .input-text > .input-container > span, body > .page > #page-main > .page-signup > .signup-form > main > .input-password > .input-container > span, body > .page > #page-main > .page-signup > .signup-form > main > .input-email > .input-container > span {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  bottom: auto;
+  left: auto;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding-left: 1rem;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > main > .input-text > .input-container > input, body > .page > #page-main > .page-signup > .signup-form > main > .input-password > .input-container > input, body > .page > #page-main > .page-signup > .signup-form > main > .input-email > .input-container > input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #393939;
+  background-color: transparent;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding-left: 1rem;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > footer {
+  width: 100%;
+  height: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > footer > input {
+  width: 100%;
+  height: 30%;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #393939;
+  line-height: initial;
+  letter-spacing: initial;
+  margin-bottom: clamp(0.4rem, calc(0.4rem + 1vw), 0.8rem);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+body > .page > #page-main > .page-signup > .signup-form > footer > input:hover {
+  background-color: #243fb0;
+  color: #DEDEDE;
+}
+
+body > .page > #page-main > .page-user-screen {
+  width: 60%;
+  height: auto;
+  min-width: 280px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-main > .page-user-screen {
+    width: 100%;
+  }
+}
+
+body > .page > #page-main > .page-user-screen > header {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  top: auto;
+  left: auto;
+  background-color: #172871;
+}
+
+body > .page > #page-main > .page-user-screen > header > p {
+  width: 65%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1rem, calc(1rem + 1vw), 1.5rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-user-screen > header > i {
+  width: 10%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  position: absolute;
+  top: auto;
+  right: 0;
+  color: #DEDEDE;
+  border: 0.1rem solid #DEDEDE;
+  border-radius: 5px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+body > .page > #page-main > .page-user-screen > article {
+  width: 100%;
+  height: auto;
+  background-color: #243fb0;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-user-screen > article > fieldset {
+  width: 90%;
+  height: auto;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* & > legend{
+                
+            } */
+}
+
+body > .page > #page-main > .page-user-screen > article > fieldset > label {
+  width: 100%;
+  height: auto;
+}
+
+body > .page > #page-main > .page-user-screen > article > fieldset > p {
+  width: 100%;
+  height: auto;
+  padding: clamp(0.2rem, calc(0.2rem + 1vw), 1rem);
+  background-color: #DEDEDE;
+  color: #393939;
+}
+
+body > .page > #page-main > .page-user-screen > article > fieldset > section {
+  width: 100%;
+  height: auto;
+}
+
+body > .page > #page-main > .page-user-screen > article > fieldset > section > label {
+  width: 100%;
+  height: auto;
+}
+
+body > .page > #page-main > .page-user-screen > article > fieldset > section > p {
+  width: 100%;
+  height: auto;
+  padding: clamp(0.2rem, calc(0.2rem + 1vw), 1rem);
+  background-color: #DEDEDE;
+  color: #393939;
+}
+
+body > .page > #page-main > .page-user-edit-screen {
+  width: 50%;
+  height: auto;
+  min-width: 280px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-main > .page-user-edit-screen {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+body > .page > #page-main > .page-user-edit-screen > header {
+  width: 100%;
+  height: clamp(4rem, calc(4rem + 1vw), 8rem);
+  background-color: #172871;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1.5rem, calc(1.5rem + 1vw), 3rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-user-edit-screen > header > p {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-user-edit-screen > form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body > .page > #page-main > .page-user-edit-screen > form > p {
+  width: 100%;
+  height: clamp(4rem, calc(4rem + 1vw), 8rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #172871;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1.5rem, calc(1.5rem + 1vw), 3rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+}
+
+body > .page > #page-main > .page-user-edit-screen > form > .input-container {
+  width: 50%;
+  height: auto;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  border: 0.1rem solid #20379B;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-main > .page-user-edit-screen > form > .input-container {
+    width: 100%;
+  }
+}
+
+body > .page > #page-main > .page-user-edit-screen > form > .input-container > span {
+  width: 100%;
+  height: 100%;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #20379B;
+  line-height: initial;
+  letter-spacing: initial;
+}
+
+body > .page > #page-main > .page-user-edit-screen > form > .input-container > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 0.1rem solid #20379B;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.5rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #20379B;
+  line-height: initial;
+  letter-spacing: initial;
+}
+
+body > .page > #page-main > .page-user-edit-screen > form > input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: transparent;
+  border: 0.1rem solid #20379B;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #dedede;
+  line-height: initial;
+  letter-spacing: initial;
+  background-color: #172871;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  cursor: pointer;
+}
+
+body > .page > #page-main > .page-market-kart-screen {
+  width: 100vw;
+  height: 100vh;
+  min-height: 90vh;
+  position: relative;
+}
+
+body > .page > #page-main > .page-market-kart-screen > header, body > .page > #page-main > .page-market-kart-screen > footer {
+  width: 100%;
+  height: clamp(4rem, calc(4rem + 1vw), 8rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #172871;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1.5rem, calc(1.5rem + 1vw), 3rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-market-kart-screen > header > p, body > .page > #page-main > .page-market-kart-screen > footer > p {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #243fb0;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > .product-description {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > .product-description > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > .product-description > p {
+  width: 100%;
+  height: auto;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(0.1rem, calc(0.1rem + 1vw), 0.5rem);
+  border-radius: 5px;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section {
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .add-more {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .add-more > p {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .add-more > i {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: clamp(2rem, calc(2rem + 1vw), 4rem);
+  color: #DEDEDE;
+  background-color: #172871;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  border-left: 0.1rem solid #DEDEDE;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .add-more > i {
+    font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  }
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .remove-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-top: 1px solid #DEDEDE;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .remove-item > p {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  text-align: center;
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .remove-item > i {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: clamp(1.5rem, calc(1.5rem + 1vw), 2rem);
+  color: #DEDEDE;
+  background-color: #172871;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+  border-left: 0.1rem solid #DEDEDE;
+}
+
+@media (max-width: 768px) {
+  body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .remove-item > i {
+    font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+  }
+}
+
+body > .page > #page-main > .page-market-kart-screen > .kart-item-card > section > .preco {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-top: 1px solid #DEDEDE;
+  background-color: #172871;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #DEDEDE;
+  line-height: initial;
+  letter-spacing: initial;
+  padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+body > .page > #page-main > .page-market-kart-screen > footer {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#carrinhoStatus {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Jura", sans-serif;
+  font-size: clamp(2rem, calc(2rem + 1vw), 4rem);
+  font-style: initial;
+  font-variant: initial;
+  font-weight: 900;
+  color: #20379B;
+  line-height: initial;
+  letter-spacing: initial;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,185 @@
+body > .page > #page-main > .page-market-kart-screen{
+    @include size(100vw, 100vh);
+    min-height: 90vh;
+    position:relative;
+
+    & > header, & > footer{
+        @include size(100%, clamp(4rem, calc(4rem + 1vw), 8rem));
+        @include flex(row, space-between, center, nowrap);
+        background-color:darken(#20379B, 10%);
+
+        @include font(
+            'Jura', sans-serif,
+            clamp(1.5rem, calc(1.5rem + 1vw), 3rem),
+            initial, 
+            initial,
+            900, 
+            #DEDEDE,
+            initial,
+            initial
+            );
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+
+            & > p{
+                @include size(100%, 100%);
+                @include flex(column, center, center, nowrap);
+            }
+
+    }
+
+    & > .kart-item-card{
+        @include size(100%, auto);
+        @include flex(row, space-between, flex-start, nowrap);
+        background-color:lighten(#20379B, 5%);
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+
+        & > .product-description{
+            @include size(40%, auto);
+            @include flex(column, center, center, nowrap);
+
+            & > img{
+                @include size(100%, auto);
+                @include object(cover, center);
+            }
+
+            & > p{
+                @include size(100%, auto);
+                @include font(
+                'Jura', sans-serif,
+                clamp(0.5rem, calc(0.5rem + 1vw), 1rem),
+                initial, 
+                initial,
+                900, 
+                #DEDEDE,
+                initial,
+                initial
+                );
+                padding: clamp(0.1rem, calc(0.1rem + 1vw), 0.5rem);
+                
+                border-radius:5px;
+            }
+        }
+
+        & > section{
+            @include size(55%, 100%);
+            @include flex(column, center, center, nowrap);
+            overflow: hidden;
+            border:1px solid #DEDEDE;
+            border-radius:5px;
+
+            & > .add-more{
+                @include size(100%, 100%);
+                @include flex(row, center, center, nowrap);
+                
+                
+
+                & > p{
+                    @include size(50%, 100%);
+                    @include flex(column, center, center, nowrap);
+                    @include font(
+                    'Jura', sans-serif,
+                    clamp(1rem, calc(1rem + 1vw), 2rem),
+                    initial, 
+                    initial,
+                    900, 
+                    #DEDEDE,
+                    initial,
+                    initial
+                    );
+                    padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+                    
+                }
+
+                & > i{
+                    @include size(50%, 100%);
+                    @include flex(column, center, center, nowrap);
+                    font-size: clamp(2rem,calc(2rem + 1vw), 4rem);
+                    color: #DEDEDE;
+                    background-color:darken(#20379B, 10%);
+                    padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+                    border-left: 0.1rem solid #DEDEDE;
+                    @media(max-width: 768px){
+                        font-size: clamp(1rem,calc(1rem + 1vw), 2rem);
+                    }
+                }
+            }
+
+            & > .remove-item{
+                @include size(100%, 100%);
+                @include flex(row, center, center, nowrap);
+                border-top:1px solid #DEDEDE;
+                
+
+
+                & > p{
+                    @include size(50%, 100%);
+                    @include flex(column, center, center, wrap);
+                    @include font(
+                    'Jura', sans-serif,
+                    clamp(0.5rem, calc(0.5rem + 1vw), 1rem),
+                    initial, 
+                    initial,
+                    900, 
+                    #DEDEDE,
+                    initial,
+                    initial
+                    );
+                    text-align: center; 
+                    
+                }
+
+                & > i{
+                    @include size(50%, 100%);
+                    @include flex(row, center, center, nowrap);
+                    font-size: clamp(1.5rem,calc(1.5rem + 1vw), 2rem);
+                    color: #DEDEDE;
+                    background-color:darken(#20379B, 10%);
+                    padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+                    border-left: 0.1rem solid #DEDEDE;
+                    @media(max-width: 768px){
+                        font-size: clamp(1rem,calc(1rem + 1vw), 2rem);
+                    }
+                }
+            }
+        
+
+            & > .preco{
+                @include size(100%, 100%);
+                @include flex(row, center, center, nowrap);
+                border-top:1px solid #DEDEDE;
+                background-color:darken(#20379B, 10%);
+                @include font(
+                    'Jura', sans-serif,
+                    clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem),
+                    initial, 
+                    initial,
+                    900, 
+                    #DEDEDE,
+                    initial,
+                    initial
+                    );
+                    padding: clamp(1rem, calc(1rem + 1vw), 2rem); 
+            }
+        }
+    }
+
+    & > footer{
+        position: sticky;
+        
+    }
+}
+
+#carrinhoStatus{
+    @include size(100%, 100vh);
+    @include flex(row, center, center, nowrap);
+    @include font(
+                'Jura', sans-serif,
+                clamp(2rem, calc(2rem + 1vw), 4rem),
+                initial, 
+                initial,
+                900, 
+                #20379B,
+                initial,
+                initial
+                );
+}

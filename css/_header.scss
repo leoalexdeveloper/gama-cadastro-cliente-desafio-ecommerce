@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap');
+body > .page > #page-header{
+
+    & > p{
+        @include size(40%, 100%);
+        @include font(
+            'Tourney', cursive,
+            clamp(1rem, calc(1rem + 1vw), 2rem),
+            initial, 
+            initial, 
+            initial,
+            #DEDEDE,
+            clamp(1rem, calc(1rem + 1vw), 2rem),
+            clamp(0.2rem, calc(0.2rem + 1vw), 0.5rem)
+            );
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+
+        @media(max-width: 360px){
+            font-size: clamp(0.4rem, calc(0.4rem + 1vw), 1rem);
+        }
+    }
+
+    & > nav{
+        @include size(50%, 100%);
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+
+        @media(max-width: 768px){
+            
+            padding:0;
+            
+        }
+
+        & > ul{
+            @include size(100%, 100%);
+            @include flex(row, space-between, center, nowrap);
+            list-style: none;
+
+            @media(max-width: 768px){
+                @include flex(column, space-around, center, nowrap);
+            }
+
+            & > li{
+                @include size(40%, 50%);
+                @include flex(row, center, center, nowrap);
+                @include font(
+                            'Tourney', cursive,
+                            clamp(0.5rem, calc(0.5rem + 1vw), 1rem),
+                            initial, 
+                            initial, 
+                            initial,
+                            #DEDEDE,
+                            clamp(1rem, calc(1rem + 1vw), 2rem),
+                            clamp(0.2rem, calc(0.2rem + 1vw), 0.5rem)
+                );
+                padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+                cursor: pointer;
+                border: 1px solid #DEDEDE;
+                border-radius: 5px;
+                margin: 0.1rem;
+                
+
+                &:hover{
+                    background-color: #DEDEDE;
+                    color: #393939;
+                }
+
+                @media(max-width: 768px){
+                    @include size(60%, auto);
+                    padding:0;
+                    
+                    font-size: clamp(0.3rem, calc(0.3rem + 1vw), 0.7rem);
+                }
+            }
+
+            & > #logged-users-bt, & > #market-kart-bt, & > #logged-users-edit-bt, & > #store-page-bt{
+                @include size(auto, 100%);
+                @include flex(row, center, center, nowrap);
+                @include font(
+                            'Tourney', cursive,
+                            clamp(0.5rem, calc(0.5rem + 1vw), 1rem),
+                            initial, 
+                            initial, 
+                            initial,
+                            #DEDEDE,
+                            clamp(1rem, calc(1rem + 1vw), 2rem),
+                            clamp(0.2rem, calc(0.2rem + 1vw), 0.5rem)
+                );
+                padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+                cursor: pointer;
+                border: 1px solid #DEDEDE;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: #DEDEDE;
+                    color: #393939;
+                }
+
+                @media(max-width: 768px){
+                    @include size(60%, 90%);
+                    padding:0;
+                    
+                    font-size: clamp(0.3rem, calc(0.3rem + 1vw), 0.7rem);
+                }
+
+                & > i{
+                    @include size(auto, auto);
+                    @include flex(row, center, center, nowrap);
+                    text-align:center;
+                    font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
+                    padding: 0.5rem 0 0.5rem 0;
+                    z-index:0;
+                }
+            }
+
+            & > #market-kart{
+                @include flex(row, center, center, nowrap);
+            }
+
+            
+        }
+    }
+}

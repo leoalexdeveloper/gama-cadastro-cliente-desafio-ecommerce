@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Tourney:wght@900&display=swap');
+
+body > .page >  #page-main > .page-inicial{
+    @include size(90%, 100%);
+    @include flex(row, space-between, flex-start, wrap);
+    margin: auto;
+
+    @media(max-width: 768px){
+        @include size(100%, 100%);
+    }
+}
+
+.product-card{
+    @include size(20%, auto);
+    @include flex(column, flex-start, center, nowrap);
+    min-width: 240px;
+    max-width: 240px;
+    overflow:hidden;
+    border-radius: 5px;
+    margin: 1rem;
+    
+    &-name{
+        @include size(100%, 10rem);
+        @include font(
+            'Jura', sans-serif,
+            clamp(0.7rem, calc(0.7rem + 1vw), 1.2rem),
+            initial, 
+            initial,
+            initial, 
+            #DEDEDE,
+            initial,
+            initial
+        );
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+        background-color:#20379B;
+        z-index:2;
+    }
+
+    &-photo{
+        @include size(100%, 10rem);
+        @include object(scale-down, center);
+        background-color:#20379B;
+        z-index:2;
+    }
+
+    &-description-title{
+        @include size(100%, auto);
+        @include flex(row, space-between, center, wrap);
+        @include font(
+            'Jura', sans-serif,
+            clamp(0.3rem, calc(0.3rem + 1vw), 1rem),
+            initial, 
+            initial,
+            initial, 
+            #DEDEDE,
+            initial,
+            initial
+        );
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem); 
+        background-color:#34248f;
+        cursor: pointer;
+        z-index:2;
+    }
+
+    &-description{
+        width:100%;
+        transform-origin: center;
+        transform: scaleY(0);
+        height: 0vh;
+        
+        @include font(
+            'Jura', sans-serif,
+            clamp(0.3rem, calc(0.3rem + 1vw), 1rem),
+            initial, 
+            initial,
+            initial, 
+            #DEDEDE,
+            1.7rem,
+            initial
+        );
+        background-color:rgba(#20379B, 0.8);
+        transition: transform 0.2s ease;
+        overflow: hidden;
+        
+        z-index:0;
+        
+        & > p{
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+        }
+    }
+
+    &-price{
+        @include size(100%, auto);
+        @include flex(row, flex-start, center, wrap);
+        @include font(
+            'Jura', sans-serif,
+            clamp(0.3rem, calc(0.3rem + 1vw), 1rem),
+            initial, 
+            initial,
+            initial, 
+            #DEDEDE,
+            initial,
+            initial
+        );
+        background-color:#20379B;
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+        position:relative;
+        
+        & > .price-title{
+            @include size(100%, auto);
+        }
+
+        & > .price-currency{
+            color: #DEDEDE;
+            font-size: 2rem;
+        }
+    }
+
+    &-button{
+        border:none;
+        outline:none;
+        @include size(100%, auto);
+        @include font(
+            'Jura', sans-serif,
+            clamp(0.5rem, calc(0.5rem + 1vw), 1.5rem),
+            initial, 
+            initial,
+            900, 
+            #393939,
+            initial,
+            initial
+        );
+        padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+        background-color:#ffe606;
+        cursor: pointer;
+        transition:0.5s ease;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    @media(max-width: 768px){
+        @include size(90%, auto);
+        min-width: 90%;
+        max-width: 90%;
+        margin: auto;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+    }
+}

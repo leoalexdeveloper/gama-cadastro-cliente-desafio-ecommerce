@@ -1,0 +1,120 @@
+body > .page > #page-main > .page-user-edit-screen{
+    @include size(50%, auto);
+    min-width:280px;
+    min-height: 400px;
+    @include flex(column, flex-start, flex-start, nowrap);
+    margin:auto;
+    
+    @media(max-width: 768px){
+        width:100%;
+        min-width:100%;
+        min-height: 100%;
+    }
+
+    & > header{
+        @include size(100%, clamp(4rem, calc(4rem + 1vw), 8rem));
+        background-color:darken(#20379B, 10%);
+
+        @include font(
+            'Jura', sans-serif,
+            clamp(1.5rem, calc(1.5rem + 1vw), 3rem),
+            initial, 
+            initial,
+            900, 
+            #DEDEDE,
+            initial,
+            initial
+            );
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+
+            & > p{
+                @include size(100%, 100%);
+                @include flex(column, center, center, nowrap);
+            }
+
+    }
+
+    & > form{
+        @include size(100%, 100%);
+        @include flex(row, flex-start, flex-start, wrap);
+        
+        & > p{
+            @include size(100%, clamp(4rem, calc(4rem + 1vw), 8rem));
+            @include flex(row, center, center, wrap);
+            background-color:darken(#20379B, 10%);
+            @include font(
+                'Jura', sans-serif,
+                clamp(1.5rem, calc(1.5rem + 1vw), 3rem),
+                initial, 
+                initial,
+                900, 
+                #DEDEDE,
+                initial,
+                initial
+                );
+        }
+
+        & > .input-container{
+            @include size(50%, auto);
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+            border: 0.1rem solid #20379B;
+
+            @media(max-width: 768px){
+                width:100%;
+            }
+
+            & > span{
+                @include size(100%, 100%);
+                @include font(
+                'Jura', sans-serif,
+                clamp(0.5rem, calc(0.5rem + 1vw), 1rem),
+                initial, 
+                initial,
+                900, 
+                #20379B,
+                initial,
+                initial
+                );
+            }
+
+            & > input{
+                @include size(100%, 100%);
+                border:none;
+                outline:none;
+                background: transparent;
+                border-bottom: 0.1rem solid #20379B;   
+                @include font(
+                'Jura', sans-serif,
+                clamp(0.7rem, calc(0.7rem + 1vw), 1.5rem),
+                initial, 
+                initial,
+                900, 
+                #20379B,
+                initial,
+                initial
+                );
+            }
+        }
+
+        & > input[type="submit"]{
+            @include size(100%, 100%);
+                
+                outline:none;
+                background: transparent;
+                border: 0.1rem solid #20379B;   
+                @include font(
+                'Jura', sans-serif,
+                clamp(1rem, calc(1rem + 1vw), 2rem),
+                initial, 
+                initial,
+                900, 
+                #dedede,
+                initial,
+                initial
+                );   
+            background-color:darken(#20379B, 10%);
+            padding: clamp(1rem, calc(1rem + 1vw), 2rem);
+            cursor: pointer;
+        }
+    }
+}
